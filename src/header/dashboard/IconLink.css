@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+.dashboard {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.dashboard li {
+    display: flex;
+    font-family: 'Public Pixel';
+}
+
+.icon-link {
+    text-decoration: none;
+    color: cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-link:hover {
+    color: magenta;
+    rotate: 5deg;
+    transform: scale(1.2);
+}
