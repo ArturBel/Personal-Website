@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+.frontpage {
+    margin-top: 30px;
+}
+
+.first-row {
+    color: cyan;
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 56px;
+    min-height: 70px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    transform: scaleY(1.5);
+}
+
+.second-row {
+    color: lightcyan;
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 48px;
+    min-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.description {
+    text-align: center;
+    font-size: 24px;
+    width: 55%;
+    margin: 0 auto;
+    font-family: Garamond;
+    color: white;
+}
+
+.ascent {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color: black;
+    font-weight: bolder;
+    animation: colorChange 3s infinite linear;
+}
+
+@keyframes colorChange {
+  0%   { color: red; }
+  20%  { color: orange; }
+  40% { color: yellow; }
+  60%  { color: green; }
+  80% { color: blue; }
+  100% { color: red; }
+}
