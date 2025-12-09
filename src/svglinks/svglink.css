@@ -1,0 +1,26 @@
+.svgdashboard {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.svgdashboard li {
+    display: flex;
+    flex-direction: row;
+}
+
+.svg-link {
+    color: cyan;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.svg-link:hover {
+    color: magenta;
+}
