@@ -34,20 +34,30 @@
 }
 
 .ascent {
-    border: 1px solid #ffffff;
-    border-radius: 3px;
-    background-color: black;
-    font-weight: bolder;
-    animation: colorChange 3s infinite linear;
+  font-weight: bolder;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    red
+  );
+  background-size: 400% 100%;
+  background-position: 0% 0%;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: gradientMove 3s linear infinite;
 }
 
-@keyframes colorChange {
-  0%   { color: red; }
-  20%  { color: orange; }
-  40% { color: yellow; }
-  60%  { color: green; }
-  80% { color: blue; }
-  100% { color: red; }
+@keyframes gradientMove {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
 }
 
 .svg-container {
