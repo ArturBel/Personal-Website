@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+.aboutme {
+    margin-top: 80px;
+}
+
+.separator {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background: cyan;
+  color: black;
+  height: 4em;
+  width: 100%;
+  line-height: 2em;
+	
+  &:before,
+  &:after {
+    background: #313131;
+    flex: 1;
+    content: "";
+    padding: 50px 0;
+    height: 0;
+    transform: rotate(45deg);
+  }
+}
+
+.section-container {
+  border: 4px dashed yellow;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  width: 20%;
+  rotate: -8deg;
+}
+
+.section-container h1 {
+  font-family: 'Public Pixel';
+  color: cyan;
+  text-shadow: 2px 2px magenta;
+}
+
+.section-container:hover {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    rotate: -8deg;
+  }
+  25% {
+    rotate: 8deg;
+  }
+  50% {
+    rotate: -8deg;
+  }
+  75% {
+    rotate: 8deg;
+  }
+  100% {
+    rotate: -8deg;
+  }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.text-part {
+    width: 45%;
+    margin-left: 10px;
+}
+
+h1.cyberpunk {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+  font-family: "Advent Pro", arial;
+  color: yellow;
+  text-shadow: 2px 2px pink;
+}
+
+h1.cyberpunk:after {
+  content: "_";
+  animation-name: hxafter;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes hxafter {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1.cyberpunk.glitched {
+  animation-name: h1glitched;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes h1glitched {
+  0% {
+    transform: skew(-20deg);
+    left: -4px;
+  }
+  10% {
+    transform: skew(-20deg);
+    left: -4px;
+  }
+  11% {
+    transform: skew(0deg);
+    left: 2px;
+  }
+  50% {
+    transform: skew(0deg);
+  }
+  51% {
+    transform: skew(10deg);
+  }
+  59% {
+    transform: skew(10deg);
+  }
+  60% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+p.cyberpunk {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 15px;
+  font-family: "Advent Pro", arial;
+  color: rgb(6, 235, 205)
+}
+
+.picture-part {
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.snip {
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  box-shadow: 0 0 5px cyan;
+  margin-left: 20%;
+  animation-name: blinking;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  0% { box-shadow: 0 0 10px cyan; }
+  50% { box-shadow: 0 0 10px magenta; }
+  55% { box-shadow: 0 0 0 cyan; }
+  60% { box-shadow: 0 0 20px cyan; }
+  65% { box-shadow: 0 0 0 cyan; }
+  70% { box-shadow: 0 0 20px magenta; }
+  75% { box-shadow: 0 0 0 cyan; }
+  80% { box-shadow: 0 0 20px cyan; }
+  85% { box-shadow: 0 0 0 cyan; }
+  90% { box-shadow: 0 0 20px magenta; }
+  100% { box-shadow: 0 0 10px cyan; }
+}
+
+.snip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
